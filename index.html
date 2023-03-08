@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+    <title>tp4</title>
+</head>
+<body>
+         <div class="container">
+            <!-- mot de passe generer s'affiche ici -->
+            <div class="header">
+                <div class="affiche_password">
+                    <span id="password_generer">K@200!mAR2?@H90</span>
+                    <button id="copy">Copier</button>
+                </div>
+            </div>
+            <!-- liste des criteres -->
+            <div class="corps">
+				<div class="ligne">
+                    <label for="taille">Longueur du Password</label>
+                    <input id="taille" value="15" type="number" min="15" max="20" onclick="geTaille()" />
+                </div>
+                <div class="ligne">
+                    <label for="Majuscule">Contient des Lettres Majuscules</label>
+                    <input id="Majuscule" type="checkbox" onclick="showGenerater()"  />
+                </div>
+                <div class="ligne">
+                    <label for="minuscule">Contient des Lettres Munuscules</label>
+                    <input id="minuscule" type="checkbox" onclick="showGenerater()" />
+                </div>
+                <div class="ligne">
+                    <label for="chiffre">Contient des Nombres</label>
+                    <input id="chiffre" type="checkbox" onclick="showGenerater()" />
+                </div>
+                <div class="ligne">
+                    <label for="symbole">Contient des Caractères Spéciaux</label>
+                    <input id="symbole" type="checkbox" onclick="showGenerater()" />
+                </div>
+                <!-- le button de generateur de mot de passe -->
+                <button class="generateur" id="generateur">
+                    Generer Le Mot de Passe
+                </button>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
